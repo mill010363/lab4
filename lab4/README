@@ -1,0 +1,11 @@
+(1)Although the function uses the same name, compiler gives them different names because their arguments are different data type. Pd= a pointer points to a double. Rd= reference of a double. i= integer. f= float.
+0000000100000f10 T __Z7averagePdRd
+0000000100000f50 T __Z7averageif
+0000000100000000 T __mh_execute_header
+0000000100000f80 T _main
+                 U dyld_stub_binder
+(2)For g++ compiler, a char uses 1 bytes of memory space, a integer uses 4 bytes, a float uses 4 bytes, a double uses 8 bytes, and a pointer uses 8 bytes. Thus, the size of any pointer is the same no matter where it points to. So the program outputs like the following numbers.  
+1 8
+4 8
+4 8
+8 8
